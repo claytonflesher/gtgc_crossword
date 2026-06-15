@@ -1,26 +1,30 @@
 # GTGC Bingo
 
-Mintlify-based bingo page that generates a random 5x5 card from repo-backed entries in `snippets/bingo-data.jsx`.
+Standalone React bingo app for Vercel or Netlify. The card is generated client-side from the entry pool in `src/bingoData.js`.
 
 ## Local development
 
-1. Use an LTS Node version supported by Mintlify:
+1. Use Node `24`:
    `nvm use`
 2. Install dependencies:
    `npm install`
-3. Start the local Mintlify preview:
+3. Start the local dev server:
    `npm run dev`
-4. Open the local site at `http://localhost:3000`
+4. Open the local site at `http://localhost:5173`
 
-Mintlify supports Node `20.17.0+`, but the CLI currently rejects Node `25+`. Use a current LTS release such as Node `22`.
+If the local dev server picks another port, use the URL Vite prints in the terminal.
 
-If you do not use `nvm`, install Node `22` with Homebrew:
+If you do not use `nvm`, install Node `24` with Homebrew:
 
-1. `brew install node@22`
-2. `export PATH="/opt/homebrew/opt/node@22/bin:$PATH"`
+1. `brew install node@24`
+2. `export PATH="/opt/homebrew/opt/node@24/bin:$PATH"`
 3. `node -v`
 
 ## Content updates
 
-- Edit `snippets/bingo-data.jsx` to change the title, free-space text, or entry pool.
-- Replace the placeholder entries with your real GTGC bingo items.
+- Edit `src/bingoData.js` to change the title, free-space text, or entry pool.
+
+## Deploy
+
+- Vercel: import the repo and deploy with the default settings
+- Netlify: build command `npm run build`, publish directory `dist`
