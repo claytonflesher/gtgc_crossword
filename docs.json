@@ -9,8 +9,15 @@
     "groups": [
       {
         "group": "Bingo",
+        "root": "index",
         "pages": ["index"]
       }
     ]
-  }
+  },
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/"
+    }
+  ]
 }
