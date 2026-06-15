@@ -1,0 +1,16 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "GTGC Bingo",
+  "colors": {
+    "primary": "#2563eb"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Bingo",
+        "pages": ["index"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gtgc-bingo",
+  "private": true,
+  "engines": {
+    "node": ">=20.17.0 <25"
+  },
+  "scripts": {
+    "dev": "mint dev",
+    "build": "mint build",
+    "validate": "mint validate"
+  },
+  "devDependencies": {
+    "mint": "latest"
+  }
+}
